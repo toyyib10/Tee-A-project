@@ -21,6 +21,7 @@ body{
 .company-name{
   font-size:4em;
   height:100px;
+  text-shadow: 5px 1px 9px rgba(0, 0, 0, 0.588);
 }
 .sign-up{
   text-align:center;
