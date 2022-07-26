@@ -1,0 +1,74 @@
+*{
+  margin: 0px;
+  padding: 0%;
+  height: 100%;
+}
+body{
+  background-image:linear-gradient(to bottom , #AF2AA0,rgb(21, 4, 20));background-repeat:no-repeat;
+}
+.sec{
+  flex-direction:column;
+  color:white; 
+}
+.company{
+  text-align:center; 
+  margin-top:60px; 
+  height:200px;
+}
+.company-logo{
+  height:100px;
+}
+.company-name{
+  font-size:4em;
+  height:100px;
+}
+.sign-up{
+  text-align:center;
+}
+.sign-up-text{
+  color:rgba(255, 255, 255, 0.794); 
+  height:33px;
+}
+.sign-up-button{
+  height:35px; 
+  width:250px; 
+  margin-top:-7px; 
+  font-weight: 900;
+}
+.login-link{
+  text-decoration:none; 
+  color:rgba(175, 42, 159, 0.904);
+}
+.company-type{
+  text-align:center; 
+  margin-top:-78px; 
+  margin-bottom:65px; 
+  height:30px;
+  font-size: 1.2em;
+}
+@media only screen and (max-width:600px){
+  .company{
+    margin-bottom: -30px;
+  }
+  .sign-up{
+    padding-top:30px;
+  }
+  .company-type{
+    margin-bottom: 0%;
+  }
+  .company-logo{
+    height: 80px;
+  }
+  .company-name{
+    height:60px;
+  }
+  .login-detail{
+    margin-top: 100px;
+  }
+  .sign-up-text{
+    margin-top:60px;
+  }
+  .sec{
+    padding-top: 90px;
+  }
+}
