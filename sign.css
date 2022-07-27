@@ -1,3 +1,7 @@
+@font-face{
+  font-family: jim;
+  src: url(JimNightshade-vdB9.ttf);
+}
 .user-form{
   flex-direction:column;
 }
@@ -24,7 +28,8 @@
   height:40px;
 }
 .company-name{
-  font-size:4em;
+  font-family: jim;
+  font-size:4.5em;
   height:50px;
   color:#AF2AA0;
   text-shadow: 5px 1px 9px rgba(0, 0, 0, 0.588);

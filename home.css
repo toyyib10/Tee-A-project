@@ -1,7 +1,10 @@
 body {
   font-size: .875rem;
 }
-
+@font-face{
+  font-family: jim;
+  src: url(JimNightshade-vdB9.ttf);
+}
 .feather {
   width: 16px;
   height: 16px;
@@ -11,7 +14,6 @@ body {
 /*
  * Sidebar
  */
-
 .sidebar {
   position: fixed;
   top: 0;
@@ -48,11 +50,11 @@ body {
 
 .sidebar .nav-link .feather {
   margin-right: 4px;
-  color: #727272;
+  color: black;
 }
 
 .sidebar .nav-link.active {
-  color: #2470dc;
+  color: black;
 }
 
 .sidebar .nav-link:hover .feather,
@@ -97,4 +99,35 @@ body {
 .form-control-dark:focus {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+.company{
+  text-align:center;  
+  height:95px;
+}
+.company-logo{
+  height:20px;
+}
+.company-name{
+  font-size: 3.2em;
+  font-family: jim;
+  height:23px;
+  color:#AF2AA0;
+  text-shadow: 5px 1px 9px rgba(0, 0, 0, 0.588);
+}
+/* .logo{
+  margin-top: -10px; 
+} */
+.company-type{
+  text-align:center; 
+  color: white;
+  margin-top:-55px; 
+  margin-bottom:5px; 
+  height:15px;
+  font-size: 1em;
+}
+@media (max-width: 767.98px) {
+    .user-search{
+      margin-top: 25px;
+    }
 }

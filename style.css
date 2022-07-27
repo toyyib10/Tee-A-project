@@ -3,6 +3,10 @@
   padding: 0%;
   height: 100%;
 }
+@font-face{
+  font-family: jim;
+  src: url(JimNightshade-vdB9.ttf);
+}
 body{
   background-image:linear-gradient(to bottom , #AF2AA0,rgb(21, 4, 20));background-repeat:no-repeat;
 }
@@ -19,7 +23,8 @@ body{
   height:100px;
 }
 .company-name{
-  font-size:4em;
+  font-size:4.5em;
+  font-family: jim;
   height:100px;
   text-shadow: 5px 1px 9px rgba(0, 0, 0, 0.588);
 }
