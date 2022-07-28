@@ -72,15 +72,15 @@ body {
  */
 
 .navbar-brand {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   font-size: 1rem;
   background-color: rgba(0, 0, 0, .25);
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
 }
 
 .navbar .navbar-toggler {
-  top: .25rem;
+  top: .15rem;
   right: 1rem;
 }
 
@@ -103,31 +103,78 @@ body {
 
 .company{
   text-align:center;  
-  height:95px;
-}
-.company-logo{
   height:20px;
+  margin-left:25px;
 }
+
+.company-logo{
+  height:10px;
+}
+ 
 .company-name{
-  font-size: 3.2em;
   font-family: jim;
-  height:23px;
+  font-size:3em;
+  height:35px;
+  margin-bottom: 13px;
   color:#AF2AA0;
   text-shadow: 5px 1px 9px rgba(0, 0, 0, 0.588);
 }
-/* .logo{
-  margin-top: -10px; 
-} */
+
 .company-type{
+  color:white; 
   text-align:center; 
-  color: white;
-  margin-top:-55px; 
-  margin-bottom:5px; 
-  height:15px;
-  font-size: 1em;
+  margin-top:-9px; 
+  margin-bottom:4px; 
+  height:7px;
+  margin-left:25px; 
+  font-size: 0.8em;
 }
+
+.account a{
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #AF2AA0;
+}
+
+.help a{
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #AF2AA0;
+}
+
+.cart{
+  margin-right: 25px;
+}
+
+.cart a{
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #AF2AA0;
+}
+.user-search{
+  margin-left:50px;
+}
+
 @media (max-width: 767.98px) {
-    .user-search{
-      margin-top: 25px;
-    }
+  .user-search{
+    margin-top: 7px;
+    margin-left:0px;
+    justify-content:space-between;
+  }
+  .company{
+    margin-left:0px;
+  }
+  .company-type{
+    margin-left:0px;
+  }
+  .account{
+    margin-top:15px;
+  }
+  .help{
+    margin-top:15px;
+  }
+  .cart{
+    margin-top:15px;
+    margin-right: 2px;
+  }
 }

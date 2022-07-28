@@ -7,14 +7,8 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
     <title>Tee A Home</title>
-
     <link rel="stylesheet" href="home.css">
-
-    
-
-    <!-- Bootstrap core CSS -->
-<link href="bootstrap.css" rel="stylesheet">
-
+    <link href="bootstrap.css" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -30,128 +24,121 @@
         }
       }
     </style>
-
-    
-    <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
   </head>
   <body>
     
-<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap shadow px-2">
-  <div class="logo"> 
-    <div class="d-flex justify-content-center company">
-      <img class="company-logo" src="" alt="image">
-      <h1 class="company-name">Tee A</h1>   
-    </div>
-    <div class="company-type">
-      <span>Multiventures</span>
-    </div>
-  </div>
-  <button class="navbar-toggler position-absolute d-md-none collapsed mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="col-12 col-md-5 user-search d-flex align-items-center justify-content-center">
-    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-  </div>
-</header>
-
-<div class="container-fluid">
-  <div class="row">
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse">
-      <div class="position-sticky pt-3 mt-4">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              <span data-feather="home"></span>
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file"></span>
-              Orders
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="shopping-cart"></span>
-              Products
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="users"></span>
-              Customers
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="bar-chart-2"></span>
-              Reports
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="layers"></span>
-              Integrations
-            </a>
-          </li>
-        </ul>
-
-        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-          <span>Saved reports</span>
-          <a class="link-secondary" href="#" aria-label="Add a new report">
-            <span data-feather="plus-circle"></span>
-          </a>
-        </h6>
-        <ul class="nav flex-column mb-2">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text"></span>
-              Current month
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text"></span>
-              Last quarter
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text"></span>
-              Social engagement
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <span data-feather="file-text"></span>
-              Year-end sale
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Dashboard</h1>
-        <div class="btn-toolbar mb-2 mb-md-0">
-          <div class="btn-group me-2">
-            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-          </div>
-          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-            <span data-feather="calendar"></span>
-            This week
-          </button>
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap shadow px-3">
+      <div> 
+        <div class="d-flex justify-content-center align-items-center mb-3 mt-2 company">
+          <svg classs="mt-5 pt-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1200 1200" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"><path fill="white" d="M600 0C268.629 0 0 268.629 0 600s268.629 600 600 600s600-268.629 600-600S931.371 0 600 0zM297.583 253.491l106.787 33.545c14.137 4.643 23.553 17.771 25.195 31.201l6.006 58.812l483.545 53.979c20.763 4.022 35.353 22.769 32.446 42.041l-30.029 169.188c-3.822 17.697-18.479 29.828-34.79 30.029H457.178l-8.423 47.974h407.959c21.332.751 36.957 16.995 37.207 35.962c-.885 21.638-18.325 35.801-37.207 36.035H405.542c-22.756-1.882-39.462-19.915-35.962-41.968l19.189-105.615l-30.029-295.236l-82.764-26.366c-9.6-3.2-16.806-9.219-21.606-18.019c-9.082-19.032-.599-40.104 15.601-49.219c9.246-4.806 18.276-5.405 27.612-2.343zm162.598 559.497c31.066 0 56.25 25.184 56.25 56.25c0 31.065-25.184 56.25-56.25 56.25c-31.064 0-56.25-25.185-56.25-56.25c0-31.066 25.184-56.25 56.25-56.25zm330.175 0c31.065 0 56.25 25.184 56.25 56.25c0 31.065-25.185 56.25-56.25 56.25s-56.25-25.185-56.25-56.25c0-31.066 25.185-56.25 56.25-56.25z"/></svg>
+          <h1 class="company-name">Tee A</h1>   
+        </div>
+        <div class="company-type ps-1 mb-3">
+          <span>Multiventures</span>
         </div>
       </div>
-      <div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur corporis maiores possimus dignissimos corrupti laudantium. Voluptatem quae eius hic doloremque deserunt unde aut nemo enim accusamus soluta atque, veritatis iure.
+      <button class="navbar-toggler position-absolute d-md-none collapsed mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> 
+      </button>
+      <div class="col-12 col-md-6 user-search d-flex">
+        <input class="form-control form-control-dark w-75 me-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn bg-white rounded-2"> Search</button>
       </div>
-    </main>
-    <script src="bootstrap.bundle.js"></script>
+      <div class="account">
+        <a href="signIn.html">
+            <svg class="mb-1 me-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"><g fill="none" stroke="black" stroke-dasharray="28" stroke-dashoffset="28" stroke-linecap="round" stroke-width="2"><path d="M4 21V20C4 16.6863 6.68629 14 10 14H14C17.3137 14 20 16.6863 20 20V21"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="28;0"/></path><path d="M12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7C16 9.20914 14.2091 11 12 11Z"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.4s" values="28;0"/></path></g></svg>
+          Account
+        </a>
+      </div>
+      <div class="help">
+        <a href="">
+          <svg class="mb-1 me-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.3em" height="1.3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"><path fill="black" d="M9.25 7.307C9.09 7.491 9 7.745 9 8a.5.5 0 0 1-1 0c0-.473.161-.97.5-1.354C8.847 6.252 9.36 6 10 6s1.153.252 1.5.646c.339.385.5.88.5 1.354c0 .49-.116.87-.302 1.19c-.163.279-.376.5-.545.677l-.042.043c-.186.195-.329.354-.434.554c-.1.191-.177.444-.177.829a.5.5 0 1 1-1 0c0-.532.11-.947.291-1.293c.177-.337.41-.584.598-.781l.022-.023c.188-.197.322-.337.423-.51c.095-.163.166-.369.166-.686c0-.255-.089-.51-.25-.693C10.597 7.134 10.36 7 10 7s-.597.134-.75.307Zm.75 6.905a.7.7 0 1 0 0-1.399a.7.7 0 0 0 0 1.4ZM2 10a8 8 0 1 1 4.262 7.075l-3.64.91a.5.5 0 0 1-.607-.606l.91-3.641A7.968 7.968 0 0 1 2 10Zm8-7a7 7 0 0 0-6.107 10.425a.5.5 0 0 1 .05.366l-.756 3.022l3.022-.756a.5.5 0 0 1 .366.05A7 7 0 1 0 10 3Z"/></svg>
+          Help
+        </a>
+      </div>
+      <div class="cart">
+      
+        <a href="">
+            <svg class="mb-1 me-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.3em" height="1.3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"><circle cx="13.5" cy="29.5" r="2.5" fill="white" class="clr-i-solid clr-i-solid-path-1"/><circle cx="26.5" cy="29.5" r="2.5" fill="white" class="clr-i-solid clr-i-solid-path-2"/><path fill="white" d="M33.1 6.39a1 1 0 0 0-.79-.39H9.21l-.45-1.43a1 1 0 0 0-.66-.65L4 2.66a1 1 0 1 0-.59 1.92L7 5.68l4.58 14.47l-1.63 1.34l-.13.13A2.66 2.66 0 0 0 9.74 25A2.75 2.75 0 0 0 12 26h16.69a1 1 0 0 0 0-2H11.84a.67.67 0 0 1-.56-1l2.41-2h15.43a1 1 0 0 0 1-.76l3.2-13a1 1 0 0 0-.22-.85Z" class="clr-i-solid clr-i-solid-path-3"/><path fill="none" d="M0 0h36v36H0z"/></svg>
+          Cart
+        </a>
+      </div>
+    </header>
+
+    <div class="container-fluid px-4">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse ps-4">
+          <div class="position-sticky pt-3 mt-4">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <span data-feather="home"></span>
+                  Home  
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  School Products
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="shopping-cart"></span>
+                  Cloth Acessories
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="users"></span>
+                  Kitchen Utensils 
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Cosmestics
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Baby Things
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Tee A Products
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Others
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h3">Recently Added Product</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <a href="" style="text-decoration:none; color: #AF2AA0; font-size:1.2em;">View all</a>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h3">Recently School Product</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <a href="" style="text-decoration:none; color: #AF2AA0; font-size:1.2em;">View all</a>
+            </div>
+          </div>
+        </main>
+        <script src="bootstrap.bundle.js"></script>
+      </div>
+    </div>
   </body>
 </html>
