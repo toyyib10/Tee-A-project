@@ -36,14 +36,14 @@ body {
 }
 
 .nav-item a:hover{
-  font-size:1.4em;
+  font-size:1.2em;
   color:white;
 }
 
 .sidebar-sticky {
   position: relative;
   top: 0;
-  height: calc(100vh - 48px);
+  height: calc(40vh - 48px);
   padding-top: .5rem;
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
@@ -61,7 +61,7 @@ body {
 
 .sidebar .nav-link.active {
   color: black;
-  font-size:2.5em;
+  font-size:2.2em;
 }
 
 .sidebar .nav-link:hover .feather,
@@ -127,14 +127,6 @@ body {
   text-shadow: 5px 1px 9px rgba(0, 0, 0, 0.588);
 }
 
-.company-name-footer{
-  font-family: jim;
-  font-size:6em;
-  height:35px;
-  margin-bottom: 13px;
-  color: white;
-  text-shadow: 5px 1px 9px rgba(0, 0, 0, 0.588);
-}
 
 .company-type{
   color:white; 
@@ -195,10 +187,30 @@ body {
   color:#AF2AA0;
   font-size:1.5em;
 }
+/* .collection{
+  overflow-x: auto;
+} */
 .product{
-  height:300px; 
+  height:340px; 
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63); 
   background-color:#AF2AA0
+}
+.product-image{
+  height:170px; 
+  width:100%; 
+  border-radius:15px 15px 0px 0px;
+}
+.progress-bar{
+  width:25%;
+  color:#af2aa0;
+}
+
+.footer{
+  background-color:#af2aa0;
+}
+
+.nav-link-footer{
+  color:white;
 }
 
 
@@ -223,5 +235,11 @@ body {
   .cart{
     margin-top:15px;
     margin-right: 2px;
+  }
+  .company-name-footer{
+    font-size:2em;
+  }
+  .company-type-footer{
+    font-size: 0.8em;
   }
 }
