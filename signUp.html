@@ -19,13 +19,14 @@
         <span>Multiventures</span>
       </div>
     </div>
-    <form class="col-12 col-md-9 d-flex align-items-center justify-content-center user-form" action="">
+    <form class="col-12 col-md-9 d-flex align-items-center justify-content-center user-form needs-validation novalidate" action="">
       <legend class="col-8 col-md-4 info-header">CREATE AN ACCOUNT</legend>
       <div class="w-75 user-sub-container">
-        <label for="" class="user-name-label">
-          Full Name
-        </label><br>
-        <input class="w-100 user-input" type="text" placeholder="Full Name">
+        <label for="firstName" class="form-label mb-0 user-name-label">Full Name</label>
+        <input type="text" class="form-control border-0 w-100 user-input ps-0 p-1" id="firstName" placeholder="Full Name" value="" required>
+        <div class="invalid-feedback">
+          Valid full name is required.
+        </div>
       </div>
       <div class="w-75 user-sub-container">
         <label for="" class="user-name-label">
@@ -56,12 +57,13 @@
           <label class="ms-2" for="">I accept the <a href="" style="color:#AF2AA0;">Terms & Conditions</a></label>
        </div>
     </form>
-    <button class="mt-4 btn submit-button rounded-3 col-8 col-md-3 fs-4 shadow-lg mb-4" type="button" style="background-color:#AF2AA0; color:white;">CREATE ACCOUNT</button>
+    <button class="mt-4 btn submit-button rounded-3 col-8 col-md-3 fs-4 shadow-lg mb-4"  type="submit" style="background-color:#AF2AA0; color:white;">CREATE ACCOUNT</button>
     <div>
       <p style="font-weight:500;">Already have an account?</p>
       <p style="text-align:center;"><a class="login-link mb-5" href="signIn.html">LOGIN</a></p>
     </div>
   </section>
+  <script src="bootstrap.bundle.js"></script>
   <script src="signUp.js"></script>
 </body>
 </html>
