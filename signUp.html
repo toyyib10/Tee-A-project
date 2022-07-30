@@ -19,48 +19,39 @@
         <span>Multiventures</span>
       </div>
     </div>
-    <form class="col-12 col-md-9 d-flex align-items-center justify-content-center user-form needs-validation novalidate" action="">
+    <form class="col-12 col-md-9 d-flex align-items-center justify-content-center user-form needs-validation" action="">
       <legend class="col-8 col-md-4 info-header">CREATE AN ACCOUNT</legend>
-      <div class="w-75 user-sub-container">
-        <label for="firstName" class="form-label mb-0 user-name-label">Full Name</label>
-        <input type="text" class="form-control border-0 w-100 user-input ps-0 p-1" id="firstName" placeholder="Full Name" value="" required>
-        <div class="invalid-feedback">
-          Valid full name is required.
-        </div>
+      <div class="w-75 user-sub-container pb-2">
+        <label for="fullName" class="form-label user-name-label">Full Name</label>
+        <input type="text" class="form-control border-0 p-0 w-100 user-input m-0" id="fullName" placeholder="Full Name" autofocus required>
       </div>
-      <div class="w-75 user-sub-container">
-        <label for="" class="user-name-label">
-          Username
-        </label><br>
-        <input class="w-100 user-input" type="text" placeholder="Username">
+      <div class="w-75 user-sub-container pb-2">
+        <label for="userName" class="form-label user-name-label">Username</label>
+        <input type="text" class="form-control border-0 p-0 w-100 user-input m-0" id="userName" placeholder="Username" required>
       </div>
-      <div class="w-75 user-sub-container">
-        <label for="" class="user-name-label">
-          E-mail
-        </label><br>
-        <input class="w-100 user-input" type="email" placeholder="abc@example.com">
+      <div class="w-75 user-sub-container pb-2">
+        <label for="eMail" class="form-label user-name-label">E-mail</label>
+        <input type="email" class="form-control border-0 p-0 w-100 user-input m-0" id="eMail" placeholder="abc@example.com" required>
       </div>
-      <div class="w-75 user-sub-container">
-        <label for="" class="user-name-label">
-          Phone Number
-        </label><br>
-        <input class="w-100 user-input" type="number" placeholder="08000000000">
+      <div class="w-75 user-sub-container pb-2">
+        <label for="phoneNumber" class="form-label user-name-label">Phone Number</label>
+        <input type="number" class="form-control border-0 p-0 w-100 user-input m-0" id="phoneNumber" placeholder="1234567890" required>
       </div>
-      <div class="w-75 user-sub-container">
-        <label for="" class="user-name-label">
-          Password
-        </label><br>
-        <input class="w-100 user-input" type="password" minlength="6" placeholder="......">
+      <div class="w-75 user-sub-container pb-2">
+        <label for="passWord" class="form-label user-name-label">Password</label>
+        <input type="password" class="form-control border-0 p-0 w-100 user-input m-0" id="passWord" placeholder="......."  required>
       </div>
-       <div class="mt-4">
-          <input type="checkbox" name="" id="">
-          <label class="ms-2" for="">I accept the <a href="" style="color:#AF2AA0;">Terms & Conditions</a></label>
-       </div>
+      <div class="form-check mt-4">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+        <label class="form-check-label ms-2" for="invalidCheck2">
+          I accept the <a href="" class="term-link">Terms & Conditions</a>
+        </label>
+      </div>
+      <button class="mt-4 btn submit-button rounded-3 col-8 col-md-4 fs-4 shadow-lg mb-4" style="background-color:#AF2AA0; color:white;"  type="submit">CREATE ACCOUNT</button>
     </form>
-    <button class="mt-4 btn submit-button rounded-3 col-8 col-md-3 fs-4 shadow-lg mb-4"  type="submit" style="background-color:#AF2AA0; color:white;">CREATE ACCOUNT</button>
     <div>
-      <p style="font-weight:500;">Already have an account?</p>
-      <p style="text-align:center;"><a class="login-link mb-5" href="signIn.html">LOGIN</a></p>
+      <p class="already">Already have an account?</p>
+      <p class="holder"><a class="login-link mb-5" href="signIn.html">LOGIN</a></p>
     </div>
   </section>
   <script src="bootstrap.bundle.js"></script>

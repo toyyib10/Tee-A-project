@@ -57,8 +57,17 @@
   font-weight: 600;
   margin-bottom: 30px;
 }
+.term-link{
+  color:#AF2AA0;
+}
 .user-password{
   justify-content: space-between;
+}
+.holder{
+  text-align:center;
+}
+.already{
+  font-weight:500;
 }
 @media only screen and (max-width:600px){
   .info-header{

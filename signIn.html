@@ -19,19 +19,15 @@
         <span>Multiventures</span>
       </div>
     </div>
-    <form class="col-12 col-md-9 d-flex align-items-center justify-content-center user-form" action="">
+    <form class="col-12 col-md-9 d-flex align-items-center justify-content-center user-form needs-validation" action="">
       <legend class="col-8 col-md-4 info-header">LOGIN</legend>
-      <div class="col-10 col-md-6 user-sub-container">
-        <label for="" class="user-name-label" style="font-size:1.2em">
-          Username or Phone Number
-        </label><br>
-        <input class="w-100 user-input" type="text" placeholder="User Name or Phone Number">
+      <div class="col-10 col-md-6 user-sub-container pb-2">
+        <label for="userName" class="form-label user-name-label">Username or E-mail</label>
+        <input type="text" class="form-control border-0 p-0 w-100 user-input m-0" id="userName" placeholder="Username or E-mail" autofocus required>
       </div>
-      <div class=" col-10 col-md-6 user-sub-container">
-        <label for="" class="user-name-label">
-          Password
-        </label><br>
-        <input class="w-100 user-input" type="password" minlength="6" placeholder="......">
+      <div class="col-10 col-md-6  user-sub-container pb-2">
+        <label for="passWord" class="form-label user-name-label">Password</label>
+        <input type="password" class="form-control border-0 p-0 w-100 user-input m-0" id="passWord" placeholder="......."  required>
       </div>
       <div class="d-flex mt-4 user-password col-10 col-md-5">
         <div>
@@ -42,9 +38,10 @@
           <a href="" style="color:#AF2AA0;">Forget your password?</a>
         </div>
       </div>
+      <button class="mt-4 mb-4 btn submit-button rounded-3 col-8 col-md-3 fs-4 shadow-lg"   type="submit" style="background-color:#AF2AA0; color:white;">LOGIN</button>
+      <div>
     </form>
-    <button class="mt-4 mb-4 btn submit-button rounded-3 col-8 col-md-3 fs-4 shadow-lg"   type="button" style="background-color:#AF2AA0; color:white;">LOGIN</button>
-    <div>
+
         <p style="font-weight:500;">Don't have an account?</p>
         <p style="text-align:center;"><a class="login-link mb-5" href="signUp.html">CREATE AN ACCOUNT</a></p>
       </div>
