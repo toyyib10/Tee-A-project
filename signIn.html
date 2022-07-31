@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="sign.css">
-  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="bootstrap.css"> 
   <title>Sign In</title>
 </head>
-<body>
+<body onload="loadData()">
+  <div class="alert alert-danger alert-dismissible fade show w-100"  style="display:none; text-align:center;" id="alertDanger" role="alert">
+    Invalid username e-mail or password
+    <button type="button" onclick="displayNone()" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
   <section class="d-flex justify-content-center align-items-center w-100 user-container pt-3">
     <div> 
       <div class="d-flex justify-content-center align-items-center mb-3 company">
@@ -23,11 +27,11 @@
       <legend class="col-8 col-md-4 info-header">LOGIN</legend>
       <div class="col-10 col-md-6 user-sub-container pb-2">
         <label for="userName" class="form-label user-name-label">Username or E-mail</label>
-        <input type="text" class="form-control border-0 p-0 w-100 user-input m-0" id="userName" placeholder="Username or E-mail" autofocus required>
+        <input type="text" class="form-control border-0 p-0 w-100 user-input m-0" id="user_mail" placeholder="Username or E-mail" autofocus required>
       </div>
       <div class="col-10 col-md-6  user-sub-container pb-2">
         <label for="passWord" class="form-label user-name-label">Password</label>
-        <input type="password" class="form-control border-0 p-0 w-100 user-input m-0" id="passWord" placeholder="......."  required>
+        <input type="password" class="form-control border-0 p-0 w-100 user-input m-0" id="passWord" placeholder="Password"  required>
       </div>
       <div class="d-flex mt-4 user-password col-10 col-md-5">
         <div>
@@ -38,7 +42,7 @@
           <a href="" style="color:#AF2AA0;">Forget your password?</a>
         </div>
       </div>
-      <button class="mt-4 mb-4 btn submit-button rounded-3 col-8 col-md-3 fs-4 shadow-lg"   type="submit" style="background-color:#AF2AA0; color:white;">LOGIN</button>
+      <button onclick="logIn()" class="mt-4 mb-4 btn submit-button rounded-3 col-8 col-md-3 fs-4 shadow-lg" type="submit" id="submitButton" style="background-color:#AF2AA0; color:white;">LOGIN</button>
       <div>
     </form>
 

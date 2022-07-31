@@ -187,9 +187,6 @@ body {
   color:#AF2AA0;
   font-size:1.5em;
 }
-/* .collection{
-  overflow-x: auto;
-} */
 .product{
   height:340px; 
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63); 

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="bootstrap.css">
   <title>Sign Up</title>
 </head>
-<body>
+<body onload="loadData()">
   <section class="d-flex justify-content-center align-items-center pt-3 w-100 user-container">
     <div> 
       <div class="d-flex justify-content-center align-items-center mb-3 company">
@@ -31,7 +31,7 @@
       </div>
       <div class="w-75 user-sub-container pb-2">
         <label for="eMail" class="form-label user-name-label">E-mail</label>
-        <input type="email" class="form-control border-0 p-0 w-100 user-input m-0" id="eMail" placeholder="abc@example.com" required>
+        <input type="email" class="form-control border-0 p-0 w-100 user-input m-0" id="eMail" placeholder="name@example.com" required>
       </div>
       <div class="w-75 user-sub-container pb-2">
         <label for="phoneNumber" class="form-label user-name-label">Phone Number</label>
@@ -39,15 +39,15 @@
       </div>
       <div class="w-75 user-sub-container pb-2">
         <label for="passWord" class="form-label user-name-label">Password</label>
-        <input type="password" class="form-control border-0 p-0 w-100 user-input m-0" id="passWord" placeholder="......."  required>
+        <input type="password" class="form-control border-0 p-0 w-100 user-input m-0" id="passWord" placeholder="Password"  required>
       </div>
       <div class="form-check mt-4">
-        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+        <input class="form-check-input" type="checkbox" id="invalidCheck2" required>
         <label class="form-check-label ms-2" for="invalidCheck2">
           I accept the <a href="" class="term-link">Terms & Conditions</a>
         </label>
       </div>
-      <button class="mt-4 btn submit-button rounded-3 col-8 col-md-4 fs-4 shadow-lg mb-4" style="background-color:#AF2AA0; color:white;"  type="submit">CREATE ACCOUNT</button>
+      <button class="mt-4 btn submit-button rounded-3 col-8 col-md-4 fs-4 shadow-lg mb-4" style="background-color:#AF2AA0; color:white;" onclick="createAccount()" type="submit">CREATE ACCOUNT</button>
     </form>
     <div>
       <p class="already">Already have an account?</p>
