@@ -26,6 +26,21 @@
   background-color: white;
   color: #AF2AA0;
 }
-.dropdown-item{
+.modal-title ,.modalDisplay, .btnClose, .dropdown-item{
   color: #AF2AA0;
+}
+.user-sub-container{
+  border-bottom:1px solid rgba(153, 147, 147, 0.562);
+}
+.user-name-label{
+  text-align:right; 
+  color:#AF2AA0; 
+  font-size:1.2em; 
+  margin-top:5px;
+}
+.user-input{
+  border:none; 
+  margin-top: 10px;
+  margin-bottom:7px; 
+  font-weight:600;
 }

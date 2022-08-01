@@ -11,14 +11,11 @@ const loadData = () => {
 const logIn = () => {
   submitButton.type = "submit"
   if (user_mail.value == "" || passWord.value == "") {
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function () {
       'use strict'
 
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
       var forms = document.querySelectorAll('.needs-validation')
 
-      // Loop over them and prevent submission
       Array.prototype.slice.call(forms)
         .forEach(function (form) {
           form.addEventListener('submit', function (event) {
@@ -50,7 +47,7 @@ const logIn = () => {
       }
     }
     if (check == true) {
-      window.location.href = "user-landing-page.html";
+      window.location.href = "userPage.html";
       user_mail.value = "";
       alertDanger.style.display = "none";
     }

@@ -9,6 +9,7 @@
   <title>Sign Up</title>
 </head>
 <body onload="loadData()">
+  <div class="w-100 d-flex align-items-center justify-content-center" style="display:none;" id="alertMessage"></div>
   <section class="d-flex justify-content-center align-items-center pt-3 w-100 user-container">
     <div> 
       <div class="d-flex justify-content-center align-items-center mb-3 company">
@@ -23,7 +24,7 @@
       <legend class="col-8 col-md-4 info-header">CREATE AN ACCOUNT</legend>
       <div class="w-75 user-sub-container pb-2">
         <label for="fullName" class="form-label user-name-label">Full Name</label>
-        <input type="text" class="form-control border-0 p-0 w-100 user-input m-0" id="fullName" placeholder="Full Name" autofocus required>
+        <input type="text" style="text-transform: capitalize;" class="form-control border-0 p-0 w-100 user-input m-0" id="fullName" placeholder="Full Name" autofocus required>
       </div>
       <div class="w-75 user-sub-container pb-2">
         <label for="userName" class="form-label user-name-label">Username</label>
@@ -47,7 +48,7 @@
           I accept the <a href="" class="term-link">Terms & Conditions</a>
         </label>
       </div>
-      <button class="mt-4 btn submit-button rounded-3 col-8 col-md-4 fs-4 shadow-lg mb-4" style="background-color:#AF2AA0; color:white;" onclick="createAccount()" type="submit">CREATE ACCOUNT</button>
+      <button class="mt-4 btn rounded-3 col-8 col-md-4 fs-4 shadow-lg mb-4" style="background-color:#AF2AA0; color:white;" id="submitButton" onclick="createAccount()" type="submit">CREATE ACCOUNT</button>
     </form>
     <div>
       <p class="already">Already have an account?</p>

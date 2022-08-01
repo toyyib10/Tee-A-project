@@ -5,12 +5,13 @@ let pNumber;
 let pWord;
 let unsaved_info = [];
 let termCheck = false;
+let emailCheck = true;
 let info;
+let index;
 
 const loadData = () => {
   if (localStorage.tee_AInformation){
     unsaved_info = JSON.parse(localStorage.tee_AInformation)
-    console.log(unsaved_info)
   }
 }
 
@@ -25,14 +26,12 @@ const createAccount = () =>{
   pNumber = phoneNumber.value;
   pWord = passWord.value;
   if (fName == "" || uName ==  "" || email == "" || pNumber == "" || pWord == "" || termCheck == false){
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    
     (function () {
       'use strict'
 
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
       var forms = document.querySelectorAll('.needs-validation')
 
-      // Loop over them and prevent submission
       Array.prototype.slice.call(forms)
         .forEach(function (form) {
           form.addEventListener('submit', function (event) {
@@ -46,22 +45,38 @@ const createAccount = () =>{
     })()
   }
   else{
-    info = {
-      user: {
-        full_name : fName,
-        user_name : uName,
-        e_mail : email,
-        phone_number : pNumber,
-        pass_word : pWord,
+    submitButton.type = "button"
+    let i = 0;
+    while (i < unsaved_info.length) {
+      if (unsaved_info[i].user.e_mail == email){
+        emailCheck = false;
       }
+      i++
     }
-    unsaved_info.push(info)
-    localStorage.tee_AInformation = JSON.stringify(unsaved_info)
-    window.location.href = "user-landing-page.html"
-    fullName.value = "";
-    userName.value = "";
-    eMail.value = "";
-    phoneNumber.value = "";
-    passWord.value = "";
+    if (emailCheck == true){
+      info = {
+        user: {
+          full_name : fName,
+          user_name : uName,
+          e_mail : email,
+          phone_number : pNumber,
+          pass_word : pWord,
+        }
+      }
+      unsaved_info.push(info)
+      localStorage.tee_AInformation = JSON.stringify(unsaved_info)
+      index = unsaved_info.length - 1
+      localStorage.index = JSON.stringify(index)
+      // window.location.href = "userPage.html"
+      fullName.value = "";
+      userName.value = "";
+      eMail.value = "";
+      phoneNumber.value = "";
+      passWord.value = "";
+    }
+    else if (emailCheck == false) {
+      alertMessage.style.display = "block"
+      alertMessage.innerHTML = `<div  class="alert col-md-9 col-10 alert-danger" style="text-align:center;">Email already exists</div>`
+    }
   }
 }
