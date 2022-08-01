@@ -1,0 +1,31 @@
+.body{
+  background-color: #AF2AA0;
+}
+.header{
+  color: rgba(255, 255, 255, 0.694);
+}
+.collection{
+  background-color: #AF2AA0;
+}
+.link{
+  color: white;
+  text-decoration: none;
+}
+.list-link{
+  margin-bottom: 7px;
+}
+.list-link a:hover{
+  color: white;
+  font-size: 1.3em;
+}
+.dropdown-toggle{
+  background-color: white;
+  color: #AF2AA0;
+}
+.dropdown-toggle:hover{
+  background-color: white;
+  color: #AF2AA0;
+}
+.dropdown-item{
+  color: #AF2AA0;
+}

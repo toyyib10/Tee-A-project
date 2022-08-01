@@ -42,6 +42,7 @@ const logIn = () => {
       password = saved_Info[index].user.pass_word;
       if ((umail == username || umail == email) && pWord == password) {
         check = true;
+        localStorage.index = JSON.stringify(index)
         break;
       }
       else{
