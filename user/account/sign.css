@@ -1,6 +1,6 @@
 @font-face{
   font-family: jim;
-  src: url(JimNightshade-vdB9.ttf);
+  src: url(../../JimNightshade-vdB9.ttf);
 }
 .user-form{
   flex-direction:column;

@@ -1,0 +1,55 @@
+@font-face{
+  font-family: jim;
+  src: url(../../JimNightshade-vdB9.ttf);
+}
+
+.company{
+  text-align:center;  
+  margin-top: 30px;
+  height:20px;
+  margin-left:25px;
+}
+
+.company-logo{
+  height:10px;
+}
+ 
+.company-name{
+  font-family: jim;
+  font-size: 5em;
+  height:35px;
+  margin-bottom: 20px;
+  color: #AF2AA0;
+  text-shadow: 5px 1px 9px rgba(0, 0, 0, 0.588);
+}
+.user-sub-container{
+  border-bottom:1px solid rgba(153, 147, 147, 0.562);
+}
+.user-name-label{
+  text-align:right; 
+  color:#AF2AA0; 
+  font-size:1.2em; 
+  margin-top:5px;
+}
+.user-input{
+  border:none; 
+  margin-top: 10px;
+  margin-bottom:7px; 
+  font-weight:600;
+}
+.user-input{
+  border:none; 
+  margin-top: 10px;
+  margin-bottom:7px; 
+  font-weight:600;
+}
+
+
+.company-type{
+  color:  black; 
+  text-align:center; 
+  margin-top: 30px; 
+  height:7px;
+  margin-left:25px; 
+  font-size: 1.2em;
+}
