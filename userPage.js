@@ -53,11 +53,11 @@ const editFunc = () => {
    </form>
   `
 
-  fullName.value = fullname
-  userName.value = username
-  eMail.value = email
-  phoneNumber.value = phonenumber
-  passWord.value = password
+  fullName.value = fullname;
+  userName.value = username;
+  eMail.value = email;
+  phoneNumber.value = phonenumber;
+  passWord.value = password;  
 
 }
 
@@ -82,13 +82,13 @@ const changeInfo = () => {
       })
     })()
 
-    alertMessage.style.display = "none"
+    alertMessage.style.display = "none";
   }
   else{
-    submitButton.type = "button"
+    submitButton.type = "button";
     if (fullName.value == fullname && userName.value == username && eMail.value == email && phoneNumber.value == phonenumber && passWord.value == password){
-      alertMessage.style.display = "block"
-      alertMessage.innerHTML = `<div class="alert alert-danger">No change made</div>`
+      alertMessage.style.display = "block";
+      alertMessage.innerHTML = `<div class="alert alert-danger">No change made</div>`;
     }
     else{
       alertMessage.style.display = "none";
@@ -100,8 +100,76 @@ const changeInfo = () => {
         pass_word : passWord.value
       }
       saved_Info[index] = user;
-      localStorage.tee_AInformation = JSON.stringify(saved_Info)
-      window.location.href = "signIn.html"
+      localStorage.tee_AInformation = JSON.stringify(saved_Info);
+      window.location.href = "signIn.html";
     }
   }
+}
+const deleteFunc = () => {
+  staticBackdropLabel.innerHTML = "Delete Account"
+  modalDisplay.innerHTML = `
+   <form class="col-12 d-flex flex-column align-items-center justify-content-center needs-validation">
+   <div id="alertMessage" class="w-100 alert alert-danger" style="display:none;"></div>
+    <div class="w-100 user-sub-container pb-2">
+      <label for="eMail" class="form-label user-name-label">E-mail</label>
+      <input type="email" class="form-control border-0 p-0 w-100 user-input m-0" id="eMail" required>
+    </div>
+    <div class="w-100 user-sub-container pb-2">
+      <label for="passWord" class="form-label user-name-label">Password</label>
+      <input type="password" class="form-control border-0 p-0 w-100 user-input m-0" id="passWord"
+      required>
+    </div>
+    <button class="mt-3 btn rounded-3 col-10 col-md-6 fs-4 shadow-lg mb-1" style="background-color:#AF2AA0; color:white;" id="submitButton" onclick="deleteAccount()" type="button">
+      Delete
+    </button>
+   </form>
+  `
+  
+}
+const deleteAccount = () => {
+  submitButton.type = "submit";
+  alertMessage.style.display = "none";
+  console.log(email , password)
+  if (eMail.value == "" || passWord.value == "") {
+    (function () {
+      'use strict'
+
+      var forms = document.querySelectorAll('.needs-validation')
+
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+            form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+    alertMessage.style.display = "none"
+  }
+  else{
+    submitButton.type = "button";
+    if (eMail.value != email  || passWord.value != password) {
+      alertMessage.innerHTML = "Incorrect email or password";
+      alertMessage.style.display = "block";
+    }
+    else {
+      alertMessage.style.display = "none"
+      const check = confirm("Are you sure you want to delete your account");
+      if (check == true){
+        checked()
+      }
+      else{
+        window.location.href = "userPage.html";
+      }
+    }
+  }
+}
+const checked = () => {
+  saved_Info.splice(index,1)
+  alertMessage.innerHTML = 'account has been successfully deleted';
+  localStorage.tee_AInformation = JSON.stringify(saved_Info)
+  window.location.href = 'signUp.html';
 }

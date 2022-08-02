@@ -67,7 +67,7 @@ const createAccount = () =>{
       localStorage.tee_AInformation = JSON.stringify(unsaved_info)
       index = unsaved_info.length - 1
       localStorage.index = JSON.stringify(index)
-      // window.location.href = "userPage.html"
+      window.location.href = "userPage.html"
       fullName.value = "";
       userName.value = "";
       eMail.value = "";
