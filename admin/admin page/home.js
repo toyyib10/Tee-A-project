@@ -5,6 +5,7 @@ let product_price;
 let quantity_available;
 let product_detail;
 let category;
+let item = [];
 
 const preview = (e) => {
   preView.type ="button";
@@ -14,7 +15,7 @@ const preview = (e) => {
   quantity_available = quantityAvailable.value;
   product_detail = productDetails.value;
   category = cat.value;
-  if (product_name != "" && product_image != "" && product_price != "" && quantity_available != "" && product_detail != ""){
+  if (product_name != "" && product_image != "" && product_price != "" && quantity_available != "" && product_detail != "" && category != ""){
     e.preventDefault()
     preView.type ="button";
     previewName.innerText = product_name;
@@ -23,11 +24,15 @@ const preview = (e) => {
     previewImage.src = imageUrl;
     nothingDisp.style.display = "none";
     productPreview.style.display = "block";
+    addItem.style.display = "block";
   } 
   else {
     if(category == ""){
-      preView.type = "button"
-      nothingDisp.innerText = "Choose a category"
+      preView.type = "button";
+      productPreview.style.display = "none";
+      addItem.style.display = "none";
+      nothingDisp.innerText = "Choose a category";
+      nothingDisp.style.display = "block";
     }
     else{
       preView.type = "submit";
@@ -37,6 +42,18 @@ const preview = (e) => {
   }
 }
 
+const itemAdd = () => {
+  unsaved_item = {
+    product_name,
+    product_image : imageUrl,
+    product_detail,
+    product_price,
+    quantity_available,
+    category
+  }
+  item.unshift(unsaved_item)
+  localStorage.saved_item = JSON.stringify(unsaved_item)
+}
 const change = (event) => {
   imageUrl = URL.createObjectURL(event.target.files[0]);
 }

@@ -229,6 +229,13 @@ body {
   width:100%;
   color:#af2aa0;
 }
+.category{
+  height: 45px;
+}
+.nothing-disp{
+  font-size:3em;
+  text-align:center;
+}
 .progress{
   background-color:rgba(27, 22, 22, 0.519);
 }
@@ -262,7 +269,8 @@ body {
     font-size: 1.19em;
   }
   .image-button{
-    font-size: 0.7em
+    font-size: 0.7em;
+    height: 45px;
   }
   .user-search{
     margin-top: 7px;
