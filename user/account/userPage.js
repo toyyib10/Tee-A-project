@@ -92,14 +92,15 @@ const changeInfo = () => {
     }
     else{
       alertMessage.style.display = "none";
+      saved_Info.splice(index,1)
       user  = {
         full_name : fullName.value,
         user_name : userName.value,
         e_mail : eMail.value,
         phone_number : phoneNumber.value,
         pass_word : passWord.value
-      }
-      saved_Info[index] = user;
+      };
+      saved_Info.push(user);
       localStorage.tee_AInformation = JSON.stringify(saved_Info);
       window.location.href = "signIn.html";
     }

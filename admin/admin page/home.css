@@ -180,18 +180,90 @@ body {
   font-size:1.5em;
 }
 .product{
-  height:340px; 
+  height:inherit; 
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63); 
-  background-color:#AF2AA0
+  flex-direction: row;
+  color: white;
 }
 .progress-bar{
   width:25%;
   color:#af2aa0;
 }
+.product-image{
+  height:210px; 
+  width:100%; 
+  border-radius:15px 15px 0px 0px;
+}
+.preview-sm{
+  display: none;
+}
 
+.user-name-label{
+  text-align:left; 
+  color:#AF2AA0; 
+  font-size:1.2em; 
+  margin-top:5px;
+}
+.user-sub-container{
+  border-bottom:1px solid rgba(153, 147, 147, 0.562);
+}
+
+.form-border{
+  border-right: 1px solid rgba(153, 147, 147, 0.562);
+}
+#file{
+  border: none;
+}
+
+.product{
+  height: inherit; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63); 
+  background-color:#AF2AA0;
+}
+.product-image{
+  height:200px; 
+  width:100%; 
+  border-radius:15px 15px 0px 0px;
+}
+.progress-bar{
+  width:100%;
+  color:#af2aa0;
+}
+.progress{
+  background-color:rgba(27, 22, 22, 0.519);
+}
+.product-container{
+  margin-top:-9px;
+}
+.product-preview{
+  display: none;
+  margin-bottom: 25px;
+}
 
 
 @media (max-width: 767.98px) {
+  .product{
+    height: inherit;
+    flex-direction: column;
+  }
+  .product-container{
+    margin-top:0px;
+  }
+  .preview-sm{
+    display: block;
+  }
+  .preview{
+    display: none;
+  }
+  .form-border{
+    border-right: none;
+  }
+  .user-name-label{
+    font-size: 1.19em;
+  }
+  .image-button{
+    font-size: 0.7em
+  }
   .user-search{
     margin-top: 7px;
     margin-left:0px;

@@ -54,6 +54,7 @@ const createAccount = () =>{
       i++
     }
     if (emailCheck == true){
+      alertMessage.style.display = "none"
       info = {
         user: {
           full_name : fName,
@@ -77,6 +78,7 @@ const createAccount = () =>{
     else if (emailCheck == false) {
       alertMessage.style.display = "block"
       alertMessage.innerHTML = `<div  class="alert col-md-9 col-10 alert-danger" style="text-align:center;">Email already exists</div>`
+      emailCheck = true;
     }
   }
 }
