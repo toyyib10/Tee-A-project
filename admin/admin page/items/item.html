@@ -6,9 +6,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Tee A Home</title>
-    <link rel="stylesheet" href="home.css">
-    <link href="../../bootstrap.css" rel="stylesheet">
+    <title>Tee A Item</title>
+    <link rel="stylesheet" href="item.css">
+    <link href="../../../bootstrap.css" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -64,7 +64,7 @@
             <div class="position-sticky pt-3 mt-4">
               <ul class="nav flex-column">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="">
+                  <a class="nav-link active" aria-current="page" href="../home.html">
                     <span data-feather="home"></span>
                     <svg class="mb-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1.3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"><path fill="currentColor" d="M946.5 505L534.6 93.4a31.93 31.93 0 0 0-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3c0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H448V716h112v224h265.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8c24.9-25 24.9-65.5-.1-90.5z"/></svg>
                     Add items
@@ -77,7 +77,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="items/item.html">
+                  <a class="nav-link" href="#">
                     <span data-feather="file"></span>
                     Items
                   </a>
@@ -94,94 +94,12 @@
           </nav>
 
           <main class="col-md-9 ms-sm-auto col-lg-10 px-md-3 pb-4 align-items-center justify-content-center">
-            <div class="d-flex w-100 justify-content-around flex-wrap flex-md-nowrap align-items-center pt-3 pb-1 mb-2 border-bottom">
-              <h1 class="h3">Add item</h1>
-              <h1 class="h3 preview">Preview</h1>
-            </div>
-            
-            <div class="d-flex flex-column flex-md-row col-12 ps-md-4 col-md-12 justify-content-between product-container">
-              <div class="col-12 col-md-6 pe-md-4 pt-md-3 form-border me-md-2 ">
-                <form class="w-100 mb-2" action="">
-                  <div class="w-100 user-sub-container pb-2 mb-3 mb-md-2">
-                    <label for="productName" class="form-label user-name-label">Product Name</label>
-                    <input type="text" class="form-control border-0 p-0 w-100 user-input m-0" id="productName" placeholder="Product Name" autofocus required>
-                  </div>
-                  <div class="w-100 user-sub-container pb-2  mb-3 mb-md-2">
-                    <label for="productImage" class="form-label user-name-label">Product Image</label>
-                    <input type="file" id="productImage" accept="image/*" onchange="change(event)" class="form-control" aria-label="Large file input example" required>     
-                  </div>
-                  <div class="d-flex w-100 justify-content-between mb-3 mb-md-2">
-                    <div class="w-50 user-sub-container me-2 pb-2">
-                      <label for="productPrice" class="form-label user-name-label">Product Price</label>
-                      <input type="number" class="form-control border-0 p-0 w-100 user-input m-0" id="productPrice" placeholder="Product Price" required>
-                    </div>
-                    <div class="w-50 user-sub-container ms-2 pb-2">
-                      <label for="quantityAvailable" class="form-label user-name-label">Quantity Available</label>
-                      <input type="number" class="form-control border-0 p-0 w-100 user-input m-0" id="quantityAvailable" placeholder="Quantity Available" required>
-                    </div>
-                  </div>
-                  <div class="w-100 user-sub-container pb-2  mb-3 mb-md-2">
-                    <label for="productDetails" class="form-label user-name-label">Product Details</label> <br>
-                    <textarea name="productDetail" id="productDetails" cols="66" rows="2" class="form-control border-0 p-0" placeholder="Product Details ..." required></textarea>    
-                  </div>
-                  <div class="w-100 pb-1 mt-4 mb-md-2 d-flex justify-content-between flex-wrap">
-                    <div class="col-12 col-md-5">
-                      <select class="form-select mb-3 mb-md-2 category text-white border-0" style="background-color: #AF2AA0;" name="category" id="cat">
-                        <option value="">category</option>
-                        <option value="school">School Items</option>
-                        <option value="personal">Personal Items</option>
-                        <option value="kitchen">Kitchen Utensils</option>
-                        <option value="household">Household Items</option>
-                        <option value="baby">Baby Items</option>
-                        <option value="toys">Toys & Education</option>
-                        <option value="tee">Tee A Products</option>
-                      </select required>
-                    </div>
-                    <button type="button" class="rounded-3 btn-lg fs-sm-6 col-12 col-md-6 mb-2 btn border-0 shadow text-white image-button" style="background-color: #AF2AA0;"> Add more image</button>
-                  </div>
-                  <div class="w-100 d-flex justify-content-center mt-3">
-                    <button type="button" class="rounded-3 w-sm-25 btn-lg btn border-0 shadow text-white" style="background-color: #AF2AA0;" id="preView" onclick="preview(event)">Preview</button>
-                  </div>
-                </form>
-              </div>
-              <div class="d-md-none d-flex w-100 justify-content-around preview-sm flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <h1 class="h3">Preview</h1>
-              </div>
-              <div class="w-100 d-flex justify-content-center align-items-center flex-column">
-                <div class="col-10 col-md-8 rounded-4 product mx-3 product-preview mt-4" id="productPreview">
-                  <div>
-                    <img class="product-image" id="previewImage" src="" alt="">
-                  </div>
-                  <div class=" px-2 mt-2">
-                    <div class="p-0 m-0">
-                      <h2 class="text-white p-0 m-0 fs-3" id="previewName"></h2>
-                      <div class="text-white p-0 m-0 fs-5 d-flex">
-                        <div><svg class="mt-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1.6em" height="1.6em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 18V7.052a1.05 1.05 0 0 1 1.968-.51l6.064 10.916a1.05 1.05 0 0 0 1.968-.51V6M5 10h14M5 14h14"/></svg></div>
-                        <div><p id="previewPrice" class="fs-4"></p></div>
-                      </div>
-                    </div>
-                    <div>
-                      <h5 class="text-white p-0 m-0" id="previewQuantity"></h5>
-                      <div class="progress mb-3 mt-3 mt-md-2">
-                        <div class="progress-bar bg-white" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <div><button class="btn bg-glass text-white">More Details</button></div>
-                    <div><button class="btn bg-dark text-white ms-4" style="border-radius: 0px 0px 15px 0px;">Add to Cart</button></div>
-                  </div>
-                </div>
-                <div class="text-secondary nothing-disp" id="nothingDisp">Nothing to preview</div>
-                <button class="btn fs-5 text-white mt-4" style="background-color:#af2aa0; display:none;" id="addItem" onclick="itemAdd()">Add Item</button>
 
-              </div>
-            </div>
           </main>
         </div>
       </div>
     </div>
-    <script src="home.js"></script>
-    <script src="../../bootstrap.bundle.js"></script>
+    <script src="item.js"></script>
+    <script src="../../../bootstrap.bundle.js"></script>
   </body>
 </html>

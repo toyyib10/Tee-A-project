@@ -10,7 +10,7 @@ let password;
 const load = () => {
   saved_Info = JSON.parse(localStorage.tee_AInformation)
   index = JSON.parse(localStorage.index)
-  user = saved_Info[index].user
+  user = saved_Info[index]
   let {full_name,user_name,e_mail,phone_number,pass_word} = user;
 
   fullname = full_name;
@@ -92,15 +92,14 @@ const changeInfo = () => {
     }
     else{
       alertMessage.style.display = "none";
-      saved_Info.splice(index,1)
-      user  = {
+      saved_Info[index]  = {
         full_name : fullName.value,
         user_name : userName.value,
         e_mail : eMail.value,
         phone_number : phoneNumber.value,
         pass_word : passWord.value
       };
-      saved_Info.push(user);
+      
       localStorage.tee_AInformation = JSON.stringify(saved_Info);
       window.location.href = "signIn.html";
     }

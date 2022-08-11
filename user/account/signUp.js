@@ -48,21 +48,20 @@ const createAccount = () =>{
     submitButton.type = "button"
     let i = 0;
     while (i < unsaved_info.length) {
-      if (unsaved_info[i].user.e_mail == email){
+      if (unsaved_info[i].e_mail == email){
         emailCheck = false;
       }
       i++
     }
     if (emailCheck == true){
       alertMessage.style.display = "none"
-      info = {
-        user: {
-          full_name : fName,
-          user_name : uName,
-          e_mail : email,
-          phone_number : pNumber,
-          pass_word : pWord,
-        }
+      info  = {
+        full_name : fName,
+        user_name : uName,
+        e_mail : email,
+        phone_number : pNumber,
+        pass_word : pWord,
+        cart : []
       }
       unsaved_info.push(info)
       localStorage.tee_AInformation = JSON.stringify(unsaved_info)

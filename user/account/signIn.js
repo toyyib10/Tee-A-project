@@ -34,9 +34,9 @@ const logIn = () => {
     for (let index = 0; index < saved_Info.length; index++) {
       let umail = user_mail.value;
       let pWord = passWord.value;
-      username = saved_Info[index].user.user_name;
-      email = saved_Info[index].user.e_mail;
-      password = saved_Info[index].user.pass_word;
+      username = saved_Info[index].user_name;
+      email = saved_Info[index].e_mail;
+      password = saved_Info[index].pass_word;
       if ((umail == username || umail == email) && pWord == password) {
         check = true;
         localStorage.index = JSON.stringify(index)

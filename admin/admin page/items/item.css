@@ -139,6 +139,7 @@ body {
   font-size: 0.8em;
 }
 
+
 .chat a{
   text-decoration: none;
   font-size: 1.5em;
@@ -169,34 +170,16 @@ body {
 .link{
   color:white;
 }
-.product{
-  height:inherit; 
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63); 
-  flex-direction: row;
-  color: white;
+.view-all{
+  text-decoration:none; 
+  color: #AF2AA0; 
+  font-size:1.2em;
 }
 .progress-bar{
   width:25%;
   color:#af2aa0;
 }
-.product-image{
-  height:210px; 
-  width:100%; 
-  border-radius:15px 15px 0px 0px;
-}
-.preview-sm{
-  display: none;
-}
 
-.user-name-label{
-  text-align:left; 
-  color:#AF2AA0; 
-  font-size:1.2em; 
-  margin-top:5px;
-}
-.user-sub-container{
-  border-bottom:1px solid rgba(153, 147, 147, 0.562);
-}
 
 .form-border{
   border-right: 1px solid rgba(153, 147, 147, 0.562);
@@ -204,37 +187,13 @@ body {
 #file{
   border: none;
 }
-
-.product{
-  height: inherit; 
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.63); 
-  background-color:#AF2AA0;
-}
-.product-image{
-  height:200px; 
-  width:100%; 
-  border-radius:15px 15px 0px 0px;
-}
 .progress-bar{
   width:100%;
   color:#af2aa0;
 }
-.category{
-  height: 45px;
-}
-.nothing-disp{
-  font-size:3em;
-  text-align:center;
-}
+
 .progress{
   background-color:rgba(27, 22, 22, 0.519);
-}
-.product-container{
-  margin-top:-9px;
-}
-.product-preview{
-  display: none;
-  margin-bottom: 25px;
 }
 
 
@@ -272,5 +231,11 @@ body {
   }
   .company-type{
     margin-left:0px;
+  }
+  .account{
+    margin-top:15px;
+  }
+  .help{
+    margin-top:15px;
   }
 }
